@@ -1,62 +1,3 @@
-﻿![Description: gc logo.jpg](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.001.jpeg)
-
-**Semester Project**
-
-*DATABASE SYSTEMS*
-
-*(CS-2014)*
-
-**Submitted to**
-
-Professor Nadeem Zafar
-
-**Submitted by**
-
-Muhammad Abdullah              109-BSCS-18
-
-Ayub Ahmad                             115-BSCS-18
-
-**Section:** A
-
-
-
-
-**Computer Science Department,**
-
-` `**GC University Lahore**
-
-
-# Table of Contents
-` `TOC \o "1-3" \h \z \u [History of Organization :	 PAGEREF _Toc63661015 \h 3](#_Toc63661015)
-
-[Problem and Constraints:	 PAGEREF _Toc63661016 \h 3](#_Toc63661016)
-
-[Objective :	 PAGEREF _Toc63661017 \h 3](#_Toc63661017)
-
-[Goals of objective :	 PAGEREF _Toc63661018 \h 4](#_Toc63661018)
-
-[Scope and Boundaries:	 PAGEREF _Toc63661019 \h 4](#_Toc63661019)
-
-[Story Board of Organization :	 PAGEREF _Toc63661020 \h 4](#_Toc63661020)
-
-[Noun Verb analysis:	 PAGEREF _Toc63661021 \h 5](#_Toc63661021)
-
-[DBMS Selection:	 PAGEREF _Toc63661022 \h 5](#_Toc63661022)
-
-[Initial ERD:	 PAGEREF _Toc63661023 \h 6](#_Toc63661023)
-
-[Normalized ERD:	 PAGEREF _Toc63661024 \h 7](#_Toc63661024)
-
-[Table Creation:	 PAGEREF _Toc63661025 \h 8](#_Toc63661025)
-
-[Data Entery:	 PAGEREF _Toc63661040 \h 15](#_Toc63661040)
-
-[ERD Created by SQL developer:	 PAGEREF _Toc63661055 \h 22](#_Toc63661055)
-
-[Queries:	 PAGEREF _Toc63661056 \h 23](#_Toc63661056)
-
-
-
 
 # ` `**History of Organization :**
 
@@ -114,10 +55,10 @@ Oracle SQL developer .
 
 
 # **Initial ERD:**
-![C:\Users\Rana Abdullah\AppData\Local\Microsoft\Windows\INetCache\Content.Word\non-normalized erd (1).png](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.002.png)
+![C:\Users\Rana Abdullah\AppData\Local\Microsoft\Windows\INetCache\Content.Word\non-normalized erd (1).png](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.002.png)
 
 # **Normalized ERD:**
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.003.png "normalized erd (1)")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.003.png "normalized erd (1)")
 # **Table Creation:**
 ## **APPOINTMENT:**
 CREATE TABLE APPOINTMENT(
@@ -138,7 +79,7 @@ CREATE TABLE APPOINTMENT(
 
 `    `);
 
-![C:\Users\Rana Abdullah\Downloads\tablesss\appointment.png](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.004.png)
+![C:\Users\Rana Abdullah\Downloads\tablesss\appointment.png](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.004.png)
 ##
 ## `                                                                                                                                                                                               `**DOCTOR:**
 CREATE TABLE DOCTOR(
@@ -159,7 +100,7 @@ CREATE TABLE DOCTOR(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.005.png "doctor updated")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.005.png "doctor updated")
 ## **PATIENT:**
 CREATE TABLE PATIENT(
 
@@ -179,7 +120,7 @@ FOREIGN KEY (t\_id) REFERENCES TREATMENT (t\_id),
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.006.png "patient updated")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.006.png "patient updated")
 ## **PRESCRIPTION:**
 CREATE TABLE PRESCRIPTION(
 
@@ -191,7 +132,7 @@ CREATE TABLE PRESCRIPTION(
 
 `    `FOREIGN KEY (appoint\_id) REFERENCES APPOINTMENT (appoint\_id));
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.007.png "prescription")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.007.png "prescription")
 ## **PRESCRIBEDMEDICINE:**
 
 CREATE TABLE PRESCRIBEDMEDICINE(
@@ -206,7 +147,7 @@ CREATE TABLE PRESCRIBEDMEDICINE(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.008.png "prescribedmedicine")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.008.png "prescribedmedicine")
 ##
 ## **                                                                                                                                                                                                   
 ## **MEDICINE:**
@@ -222,7 +163,7 @@ CREATE TABLE MEDICINE(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.009.png "medicine")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.009.png "medicine")
 
 
 ## **ROOM:**
@@ -240,7 +181,7 @@ CREATE TABLE ROOM(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.010.png "room")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.010.png "room")
 
 ## **DEPARTMENT:**
 CREATE TABLE DEPARTMENT(
@@ -259,7 +200,7 @@ FOREIGN KEY (doc\_id)  REFERENCES doctor (doc\_id),
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.011.png "department data update")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.011.png "department data update")
 
 
 ## **HOS\_BLOCK:**
@@ -273,7 +214,7 @@ CREATE TABLE HOS\_BLOCK(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.012.png "hospitalblock")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.012.png "hospitalblock")
 ## **TREATMENT:**
 CREATE TABLE TREATMENT(
 
@@ -287,7 +228,7 @@ CREATE TABLE TREATMENT(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.013.png "treatment")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.013.png "treatment")
 ## **SPECIALIZATION:**
 CREATE TABLE SPECIALIZATION(
 
@@ -305,7 +246,7 @@ CREATE TABLE SPECIALIZATION(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.014.png "specilizaation")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.014.png "specilizaation")
 
 ## **NURSE:**
 CREATE TABLE NURSE(
@@ -322,7 +263,7 @@ CREATE TABLE NURSE(
 
 
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.015.png "nurse updated")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.015.png "nurse updated")
 ## **NURSEINTREATMENT:**
 CREATE TABLE NURSEINTREATMENT(
 
@@ -338,7 +279,7 @@ CREATE TABLE NURSEINTREATMENT(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.016.png "nurseintreatment")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.016.png "nurseintreatment")
 
 
 ## `    `**DUTYINBLOCK:**
@@ -356,7 +297,7 @@ CREATE TABLE DUTYINBLOCK(
 
 `    `);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.017.png "dutyinblock")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.017.png "dutyinblock")
 
 
 # **Data Entery:**
@@ -371,7 +312,7 @@ INSERT INTO NURSE VALUES (4,'Zainab', '21-FEB-2001',56540);
 
 INSERT INTO NURSE VALUES (5,'Mamona', '16-MAR-2016',12790);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.018.png "nurse updated")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.018.png "nurse updated")
 ## **TREATMENT:**
 INSERT INTO treatment VALUES (1,'Gene therapy‎', 50000);
 
@@ -383,7 +324,7 @@ INSERT INTO treatment VALUES (4,'Cancer treatments‎', 240000);
 
 INSERT INTO treatment VALUES (5,'Drugs Treatment', 5000);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.019.png "treatment")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.019.png "treatment")
 
 
 ## **HOS\_BLOCK:**
@@ -397,7 +338,7 @@ INSERT INTO hos\_block VALUES (4,'Himmani Block');
 
 INSERT INTO hos\_block VALUES (5,'New Block');
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.020.png "hospitalblock")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.020.png "hospitalblock")
 ## **ROOM:**
 INSERT INTO room VALUES (1,'Economy', 5);
 
@@ -409,7 +350,7 @@ INSERT INTO room VALUES (4,'Professional', 1);
 
 INSERT INTO room VALUES (5,'Economy Plus', 2);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.021.png "room")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.021.png "room")
 
 
 ## **PATIENT:**
@@ -423,7 +364,7 @@ INSERT INTO patient VALUES (4,'Maryam','Orangzaib', 5,3);
 
 INSERT INTO patient VALUES (5,'Kameel','Jonson', 4,4);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.022.png "patient updated")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.022.png "patient updated")
 ## **DEPARTMENT :**
 INSERT INTO department VALUES (1,'Cardiology', 'Dr. Abdul Qadeer Block');
 
@@ -435,7 +376,7 @@ INSERT INTO department VALUES (4,'Sexual Health', 'Sikandar Block');
 
 INSERT INTO department VALUES (5,'Orthopedics', 'Quaid-e-Azam Block');
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.023.png "department")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.023.png "department")
 
 
 ## **DOCTOR:**
@@ -449,7 +390,7 @@ INSERT INTO doctor VALUES (4,'Talha Munir', '10-SEP-2001',3,10000);
 
 INSERT INTO doctor VALUES (5,'Fahad Hassan', '13-AUG-2016',2,10000);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.024.png "doctor updated")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.024.png "doctor updated")
 
 
 
@@ -464,7 +405,7 @@ INSERT INTO specialization VALUES ('18-NOV-2019',4,5);
 
 INSERT INTO specialization VALUES ('21-SEP-2018',2,1);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.025.png "specialization")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.025.png "specialization")
 
 
 ## **NURSEINTREATMENT:**
@@ -478,7 +419,7 @@ INSERT INTO nurseintreatment VALUES (5,4);
 
 INSERT INTO nurseintreatment VALUES (4,1);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.026.png "nurseindepartment")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.026.png "nurseindepartment")
 ## **DUTYINBLOCK:**
 INSERT INTO dutyinblock VALUES (3,4);
 
@@ -490,7 +431,7 @@ INSERT INTO dutyinblock VALUES (4,2);
 
 INSERT INTO dutyinblock VALUES (5,3);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.027.png "dutyinblock")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.027.png "dutyinblock")
 ## **APPOINTMENT:**
 INSERT INTO appointment VALUES (1,CURRENT\_TIMESTAMP,3,4);
 
@@ -502,7 +443,7 @@ INSERT INTO appointment VALUES (4,CURRENT\_TIMESTAMP,2,1);
 
 INSERT INTO appointment VALUES (5,CURRENT\_TIMESTAMP,5,2);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.028.png "appointment")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.028.png "appointment")
 
 ## **PRESCRIPTION:**
 INSERT INTO prescription VALUES (1,3);
@@ -515,7 +456,7 @@ INSERT INTO prescription VALUES (4,5);
 
 INSERT INTO prescription VALUES (5,2);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.029.png "prescription")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.029.png "prescription")
 ## **MEDICINE:**
 INSERT INTO medicine VALUES (1,'aripiprazole','Abilify');
 
@@ -527,7 +468,7 @@ INSERT INTO medicine VALUES (4,'quinapril HCI','Accupril');
 
 INSERT INTO medicine VALUES (5,'quinapril/HCTZ tablet','Accuretic');
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.030.png "medicine")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.030.png "medicine")
 
 
 ## **PRECRIBEDMEDICINE:**
@@ -541,11 +482,11 @@ INSERT INTO prescribedmedicine VALUES (1,3);
 
 INSERT INTO prescribedmedicine VALUES (4,2);
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.031.png "prescribedmedicine")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.031.png "prescribedmedicine")
 
 
 # **ERD Created by SQL developer:**
-![C:\Users\Rana Abdullah\AppData\Local\Microsoft\Windows\INetCache\Content.Word\erd updated.png](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.032.png)
+![C:\Users\Rana Abdullah\AppData\Local\Microsoft\Windows\INetCache\Content.Word\erd updated.png](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.032.png)
 
 
 # **Queries:**
@@ -554,47 +495,28 @@ INSERT INTO prescribedmedicine VALUES (4,2);
 
 select d.doc\_name ,t.t\_cost,t.t\_name,ne.N\_name from doctor d join specialization s on(d.doc\_id=s.doc\_id) join treatment t on(s.t\_id=t.t\_id)join nurseintreatment n on(n.t\_id=t.t\_id) join nurse ne on(n.n\_id=ne.n\_id)where t.t\_name='Cancer treatments‎' ;
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.033.png "1")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.033.png "1")
 
 **Total number of doctors in each department** 
 
 select count (d.doc\_id)as Total\_doctors,de.d\_name from department de join doctor d  on (de.d\_id=d.d\_id) group by de.d\_name;
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.034.png "2")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.034.png "2")
 
 **show the number appointments of each patient id**
 
 select count (a.appoint\_id)as Total\_Appointments,a.p\_id from appointment a join patient p on(a.p\_id=p.p\_id) group by a.p\_id   ;
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.035.png "3")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.035.png "3")
 
 `  `**show the appointment time of patient aqsa**
 
 select a.appointment\_time ,p.p\_name from appointment a join patient p on(a.p\_id=p.p\_id) where p.p\_name='Aqsa'; 
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.036.png "4")
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.036.png "4")
 
 ` `**show the doctors whose salary are greater than average salary**
 
 select doc\_name,date\_of\_joining, doc\_salary from doctor where doc\_salary > (select avg(doc\_salary) from doctor );
 
-![](Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.037.png "5")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Page  **PAGE 2** of  **NUMPAGES  2**
-
+![](imagesforReadme/Aspose.Words.00c7f3c1-124d-4ebd-a94f-d663ee5f8172.037.png "5")
